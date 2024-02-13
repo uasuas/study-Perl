@@ -31,4 +31,5 @@ my $b = '変数b';
 # 可能例。
 my $c = "Hello$b" . "world!!\n";
 my $str = $c;
-print $str;
+# x 2 とする事で2回strを表示できる。
+print $str x 2;
