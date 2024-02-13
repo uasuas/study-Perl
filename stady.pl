@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 print "Hello, world!\n";
 my $num = 5;
 if ($num == 5) {
