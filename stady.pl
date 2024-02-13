@@ -23,3 +23,12 @@ if ($num == 5) {
 } else {
   print "エラー";
 }
+# 文字列の'と"の違い。
+# 'は特殊文字の\nや\tが使えない。加えて変数展開も不可。
+# 不可例。
+my $a = 'Hello$b' . 'world!!\n';
+my $b = '変数b';
+# 可能例。
+my $c = "Hello$b" . "world!!\n";
+my $str = $c;
+print $str;
