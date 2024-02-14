@@ -33,3 +33,8 @@ my $c = "Hello$b" . "world!!\n";
 my $str = $c;
 # x 2 とする事で2回strを表示できる。
 print $str x 2;
+
+# 配列変数。
+# 配列に格納する際データ型は問わない。
+my @ex = (100, 200.5, "red");
+print @ex;
