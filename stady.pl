@@ -38,3 +38,8 @@ print $str x 2;
 # 配列に格納する際データ型は問わない。
 my @ex = (100, 200.5, "red");
 print @ex;
+
+my @num = (1..10);
+# 文字列の別の表記方法。
+my @str = qw(red green);
+print @str;
