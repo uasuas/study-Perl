@@ -43,3 +43,5 @@ my @num = (1..10);
 # 文字列の別の表記方法。
 my @str = qw(red green);
 print @str;
+# 配列の中身を取り出す[数字]、注意点：＠ではなく＄になる。
+print $num[1];
