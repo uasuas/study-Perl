@@ -45,5 +45,10 @@ my @str = qw(red green);
 print @str;
 # 配列の中身を取り出す[数字]、注意点：＠ではなく＄になる。
 print $num[1];
-
+# 配列の最後を指定する際の指定方法（$#〇〇)。
 print @ex[1..$#ex];
+
+# ハッシュ変数。
+my %name = ("takasi"=>1, "takesi"=>2, "takako"=>3, "takeko"=>4);
+# 取り出し方。
+print $name{"takasi"}
