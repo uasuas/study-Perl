@@ -45,3 +45,5 @@ my @str = qw(red green);
 print @str;
 # 配列の中身を取り出す[数字]、注意点：＠ではなく＄になる。
 print $num[1];
+
+print @ex[1..$#ex];
