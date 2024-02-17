@@ -81,3 +81,9 @@ if ($strif =~ /es/) {
 } else {
   print ("no es\n");
 }
+
+my $numA = 10;
+my $numB = 20;
+#  AがBより大きかったらAをmaxにいれ違った場合、Bをmaxに入れる。
+my $max = ($numA > $numB) ? $numA : $numB;
+print $max;
