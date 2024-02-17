@@ -53,8 +53,24 @@ my %name = ("takasi"=>1, "takesi"=>2, "takako"=>3, "takeko"=>4);
 # 取り出し方。
 print $name{"takasi"};
 
-# 文字列の比較演算子。
+# 文字列の比較演算子。（辞書順で比較するときに利用する演算子）
+# 先頭から1文字づつ、文字コードの大きさを比べる。
+# eq:AとBは等しい。
+# ne:AとBは等しくない。
+# gt:AはBより大きい。
+# ge:AはB以上。
+# lt:AはBより小さい。
+# le:AはB以下。
 my $strif = "test";
 if ($strif eq "test") {
   print ("true\n");
+}
+
+my $str1 = "1";
+my $str2 = "02";
+
+if ($str1 gt $str2) {
+  print "str1 is big\n";
+} else {
+  print "str2 is big\n";
 }
