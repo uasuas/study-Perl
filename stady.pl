@@ -74,3 +74,10 @@ if ($str1 gt $str2) {
 } else {
   print "str2 is big\n";
 }
+
+# 部分一致。(/ここが含まれるもの/)
+if ($strif =~ /es/) {
+  print ("on es\n");
+} else {
+  print ("no es\n");
+}
