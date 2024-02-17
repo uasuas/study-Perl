@@ -51,4 +51,10 @@ print @ex[1..$#ex];
 # ハッシュ変数。
 my %name = ("takasi"=>1, "takesi"=>2, "takako"=>3, "takeko"=>4);
 # 取り出し方。
-print $name{"takasi"}
+print $name{"takasi"};
+
+# 文字列の比較演算子。
+my $strif = "test";
+if ($strif eq "test") {
+  print ("true\n");
+}
