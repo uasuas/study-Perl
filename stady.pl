@@ -94,3 +94,7 @@ my $unless = 10;
 unless($unless <= 0){
    print("unless is greater than 0\n")	                   
 }
+
+# ifの別記述。
+my $if = 1;
+print("Welcome to Perl if tutorial\n") if($if == 1);
