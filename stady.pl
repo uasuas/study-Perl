@@ -1,4 +1,7 @@
 # Perlスクリプト内で使用されるプラグマ（pragma）
+use v5.12;
+# バージョンの指定。
+
 use strict;
 # 未宣言の変数の使用を許可しません。変数はmyキーワードを使用して宣言する必要がある。
 # 変数の名前空間の異なる変数が同じ名前を持つ場合に警告を生成。
@@ -98,3 +101,28 @@ unless($unless <= 0){
 # ifの別記述。
 my $if = 1;
 print("Welcome to Perl if tutorial\n") if($if == 1);
+
+# given/whenの記述。
+my $color;
+my $code;
+print("Please enter a RGB color to get its code:\n");
+$color = <STDIN>;
+chomp($color);
+$color = uc($color);
+given($color){
+  # use v5.10以降で使用可能表現。
+  # when ('RED') {$code = '#FF0000';}
+  # when ('GREEN') {$code = '#00FF00';}
+  # when ('BLUE') {$code = '#0000FF';}
+  # use v5.12以降で使用可能表現。
+  $code = '#FF0000' when 'RED';
+  $code = '#00FF00' when 'GREEN';
+  $code = '#0000FF' when 'BLUE';
+  default{$code = '';}
+}
+if($code ne ''){
+   print("code of $color is $code \n");
+}
+else{
+    print("$color is not RGB color\n");
+}
