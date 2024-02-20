@@ -89,6 +89,7 @@ my $max = ($numA > $numB) ? $numA : $numB;
 print $max;
 
 # unlessの記述方法。
+# 基本ifとelseの記述は同様のため省略。
 my $unless = 10;
 unless($unless <= 0){
    print("unless is greater than 0\n")	                   
