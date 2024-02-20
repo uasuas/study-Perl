@@ -87,3 +87,9 @@ my $numB = 20;
 #  AがBより大きかったらAをmaxにいれ違った場合、Bをmaxに入れる。
 my $max = ($numA > $numB) ? $numA : $numB;
 print $max;
+
+# unlessの記述方法。
+my $unless = 10;
+unless($unless <= 0){
+   print("unless is greater than 0\n")	                   
+}
