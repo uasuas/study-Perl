@@ -109,7 +109,7 @@ print("Please enter a RGB color to get its code:\n");
 $color = <STDIN>;
 chomp($color);
 $color = uc($color);
-given($color){
+given($color) {
   # use v5.10以降で使用可能表現。
   # when ('RED') {$code = '#FF0000';}
   # when ('GREEN') {$code = '#00FF00';}
