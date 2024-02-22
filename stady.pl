@@ -122,9 +122,9 @@ given($color) {
   default{$code = '';}
 }
 if($code ne ''){
-   print("code of $color is $code \n");
+  print("code of $color is $code \n");
 }else{
-    print("$color is not RGB color\n");
+  print("$color is not RGB color\n");
 }
 # 繰り返し処理。
 my @range = (1..9);
@@ -133,4 +133,8 @@ for(@range){
 }
 foreach(@range){
 	print("$_","\n");
+}
+my $i = 20;
+for $i (@range){
+	print("$i");
 }
