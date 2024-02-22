@@ -106,6 +106,7 @@ print("Welcome to Perl if tutorial\n") if($if == 1);
 my $color;
 my $code;
 print("Please enter a RGB color to get its code:\n");
+# 入力受付。
 $color = <STDIN>;
 chomp($color);
 $color = uc($color);
@@ -122,7 +123,6 @@ given($color) {
 }
 if($code ne ''){
    print("code of $color is $code \n");
-}
-else{
+}else{
     print("$color is not RGB color\n");
 }
