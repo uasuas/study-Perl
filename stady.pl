@@ -126,3 +126,11 @@ if($code ne ''){
 }else{
     print("$color is not RGB color\n");
 }
+# 繰り返し処理。
+my @range = (1..9);
+for(@range){
+  print("$_","\n");
+}
+foreach(@range){
+	print("$_","\n");
+}
