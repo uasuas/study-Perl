@@ -139,3 +139,5 @@ my $i = 20;
 for $i (@range){
 	print("$i");
 }
+# ここで20が出力されるのはforのブロック内で上書きされている為。
+print('iterator $i is ',"$i","\n");
