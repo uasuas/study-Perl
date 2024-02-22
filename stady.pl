@@ -135,6 +135,7 @@ foreach(@range){
 	print("$_","\n");
 }
 my $i = 20;
+# for ループの条件部分で、$i というスカラー変数を @range の要素で上書きしている為、20は下記で変化している。
 for $i (@range){
 	print("$i");
 }
