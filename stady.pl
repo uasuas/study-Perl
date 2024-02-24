@@ -126,6 +126,7 @@ if($code ne ''){
 }else{
   print("$color is not RGB color\n");
 }
+
 # 繰り返し処理。
 my @range = (1..9);
 for(@range){
@@ -141,3 +142,13 @@ for $i (@range){
 }
 # ここで20が出力されるのはforのブロック内で上書きされている為、ブロック外で定義されブロック外でprintされているので20が出力される。
 print('iterator $i is ',"$i","\n");
+
+# 繰り返し処理比較。
+my @range2 = (1..6);
+for(my $i = 0; $i <= $#range2; $i++){
+  print("$range2[$i]\n");
+}
+# 上下は同様の挙動をする。
+for(@range2){
+  print("$_\n")
+}
