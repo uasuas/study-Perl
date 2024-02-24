@@ -152,3 +152,18 @@ for(my $i = 0; $i <= $#range2; $i++){
 for(@range2){
   print("$_\n")
 }
+
+# whileの記述。
+my $counter = 10;
+# counterが0より大きかったら繰り返せ。
+while($counter > 0){
+  print("$counter\n");
+  # カウントを表示した後にカウントを1減らす。
+  $counter--;
+  # １秒止める（これによりカウントダウンをしている動きになる）。
+  sleep(1);
+  # カウントが0になったらあけおめ表示。
+  if($counter == 0){
+    print("あけおめ");
+  }
+}
