@@ -169,13 +169,20 @@ while($counter > 0){
 }
 
 # ダイヤモンド演算子にて入力した内容を配列に格納し表示する。
+# 入力した内容を保持するための変数を定義。
 my $number;
 my @numbers;
 print "control d to exit";
+# control+dでループを止めないと無限ループするwhileを開始。
+# input = <>にて入力を受付て格納。
 while(my $input = <>) {
   print(">");
+  # 入力を受付た後確定をする際にenterで\nが入力されるため、\nをchompにて取り除く。
   chomp $input;
+  # 入力された値をintに直してnumberに格納。
   $number = int($input);
+  # push 関数を使用して、変換された数値が @numbers 配列に追加。
+  # pushの使用方法は push(@追加先, $追加内容)
   push(@numbers, $number);
 }
 print "You entered: @numbers\n";
