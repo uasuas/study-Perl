@@ -167,3 +167,15 @@ while($counter > 0){
     print("あけおめ");
   }
 }
+
+# ダイヤモンド演算子にて入力した内容を配列に格納し表示する。
+my $number;
+my @numbers;
+print "control d to exit";
+while(my $input = <>) {
+  print(">");
+  chomp $input;
+  $number = int($input);
+  push(@numbers, $number);
+}
+print "You entered: @numbers\n";
