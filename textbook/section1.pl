@@ -10,3 +10,9 @@ print "$s\n";
 # 12個目を含むところから最後までを抽出。
 my $s1 = substr($text, 12);
 print "$s1\n";
+# 切り出したところの文字列を入れ替える。
+my $str = 'Programming Lesson is fun!';
+# (切り出す元の文字列,切り出す範囲初め,切り出す範囲終わり,入れたい内容)
+my $s2 = substr($str, 12, 6, 'Perl');
+print "\$str = $str\n";
+print "\$s2 = $s2\n";
