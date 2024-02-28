@@ -17,6 +17,13 @@ my $s2 = substr($str, 12, 6, 'Perl');
 print "\$str = $str\n";
 print "\$s2 = $s2\n";
 # LessonをPerlに変える例。
-
+# =~ 演算子は、正規表現パターンに基づいて文字列を置換する際に使用する。
+# 正規表現は、特定の文字列パターンを記述し、そのパターンに一致する文字列を見つけるために使用する。
 $str =~ s/Lesson/Perl/;
 print "\$s2 = $str\n";
+# <<"EOD" から EODの範囲を $string に代入。
+my $string = <<"EOD";
+Test Text
+Test2 Text2
+EOD
+print "$string\n";
