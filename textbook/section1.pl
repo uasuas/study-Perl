@@ -21,7 +21,8 @@ print "\$s2 = $s2\n";
 # 正規表現は、特定の文字列パターンを記述し、そのパターンに一致する文字列を見つけるために使用する。
 $str =~ s/Lesson/Perl/;
 print "\$s2 = $str\n";
-# <<"EOD" から EODの範囲を $string に代入。
+
+# <<"EOD" から EODの範囲を $string に代入できる。p35
 my $string = <<"EOD";
 Test Text
 Test2 Text2
