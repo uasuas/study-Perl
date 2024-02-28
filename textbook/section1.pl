@@ -16,3 +16,7 @@ my $str = 'Programming Lesson is fun!';
 my $s2 = substr($str, 12, 6, 'Perl');
 print "\$str = $str\n";
 print "\$s2 = $s2\n";
+# LessonをPerlに変える例。
+
+$str =~ s/Lesson/Perl/;
+print "\$s2 = $str\n";
