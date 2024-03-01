@@ -28,3 +28,13 @@ Test Text
 Test2 Text2
 EOD
 print "$string\n";
+
+# 数が入力されたかを判断。p64
+# =~ /^¥d+$/ は =~ /^\d+$/ で正常に動く為注意。
+my $line = <>;
+chomp($line);
+if ($line =~ /^\d+$/) {
+  print "\$line = 数字列";
+} else {
+  print "\$line = 数字列ではない";
+}
