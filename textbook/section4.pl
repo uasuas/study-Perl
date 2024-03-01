@@ -16,3 +16,9 @@ foreach (@score) {
   $sum += $_;
 }
 print "$sum\n";
+# 配列の中身の取り出しと追加。p75
+print "$score[0], $score[1], $score[2]\n";
+# ここで配列に値を追加。
+$score[3] = 100;
+# 配列を表示すると追加されていることが確認できる。
+print "@score\n";
