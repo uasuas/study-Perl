@@ -9,4 +9,10 @@ foreach my $item (@score) {
   # $sum = $sum + $item;
   $sum += $item;
 }
-print $sum;
+print "$sum\n";
+# my $item を省略した記法。
+$sum = 0;
+foreach (@score) {
+  $sum += $_;
+}
+print "$sum\n";
