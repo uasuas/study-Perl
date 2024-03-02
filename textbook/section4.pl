@@ -29,3 +29,10 @@ my @week = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
 # パターン２ qwを（）前に施術することで、スペースで区切った配列にできる。
 my @week2 = qw(Sun Mon Tue Wed Thu Fri Sat);
 print "@week / @week2\n";
+
+# 配列の中身があるかを確認。p78
+if (@week > 0) {
+  print "文字列あり\n";
+} else {
+  print "文字列なし\n";
+}
