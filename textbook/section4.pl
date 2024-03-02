@@ -22,3 +22,9 @@ print "$score[0], $score[1], $score[2]\n";
 $score[3] = 100;
 # 配列を表示すると追加されていることが確認できる。
 print "@score\n";
+
+# 文字列の配列と別記法。
+# パターン１
+my @week = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+# パターン２ qwを（）前に施術することで、スペースで区切った配列にできる。
+my @week2 = qw(Sun Mon Tue Wed Thu Fri Sat);
