@@ -28,3 +28,4 @@ print "@score\n";
 my @week = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
 # パターン２ qwを（）前に施術することで、スペースで区切った配列にできる。
 my @week2 = qw(Sun Mon Tue Wed Thu Fri Sat);
+print "@week / @week2\n";
