@@ -52,9 +52,15 @@ print "$x $y\n";
 ($x, $y) = ($y, $x);
 print "$x $y\n";
 
-# joinの使用。p83
+# joinの使用。p81
 # print "$score[0],$score[1],$score[2]\n";と似たプリント内容。
 print join(",", @score), "\n";
 # 別表記。
 # ()内を連結する。
 print join(",", ($score[0], $score[1], $score[2])), "\n";
+
+# splitの使用方法。p83
+my @score2 = split(//, "1,2,3"); #出力　1 , 2 , 3
+@score2 = split(/,/, "1,2,3"); #出力　1 2 3
+@score2 = split(/1,/, "1,2,3"); #出力　 2,3
+print "@score2\n";
