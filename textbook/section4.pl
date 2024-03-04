@@ -84,7 +84,7 @@ print "@array\n";
 # undefの使用。p91
 my $range = @array;
 my $array = pop(@array);
-# 確認のため中身をundefにする。
+# 確認のため中身をカラ（undef）にする。
 for (my $i = 0; $i < $range; $i++) {
   $array = pop(@array);
   print "@array => $array\n";
