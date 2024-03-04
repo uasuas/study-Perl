@@ -80,3 +80,18 @@ print "@array\n";
 my $arrayone = pop(@array);
 print "$arrayone\n";
 print "@array\n";
+
+# undefの使用。p91
+my $range = @array;
+my $array = pop(@array);
+# 確認のため中身をundefにする。
+for (my $i = 0; $i < $range; $i++) {
+  $array = pop(@array);
+  print "@array => $array\n";
+}
+# defined関数を使用して中身がカラ（undef）だった際false、それ以外ならtureを返す。
+if (defined($array)) {
+  print "$array\n";
+} else {
+  print "undef\n";
+}
