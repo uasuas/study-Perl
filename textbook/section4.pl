@@ -51,3 +51,7 @@ print "$x $y\n";
 # 別記法。
 ($x, $y) = ($y, $x);
 print "$x $y\n";
+
+# joinの使用。p83
+# print "$score[0],$score[1],$score[2]\n";と似たプリント内容。
+print join(",", @score), "\n";
