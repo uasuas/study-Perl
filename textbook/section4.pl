@@ -55,3 +55,6 @@ print "$x $y\n";
 # joinの使用。p83
 # print "$score[0],$score[1],$score[2]\n";と似たプリント内容。
 print join(",", @score), "\n";
+# 別表記。
+# ()内を連結する。
+print join(",", ($score[0], $score[1], $score[2])), "\n";
