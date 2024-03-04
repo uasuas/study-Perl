@@ -69,7 +69,7 @@ print "@score2\n";
 # 最後に要素を加える。
 push(@score2, "LAST");
 print "@score2\n";
-
+# スタック（後入れ先出し）である。
 my @array = ("one", "on", "one");
 # push(@array, "I", "Love", "You");
 push(@array, ("I", "Love", "You")); # 上記と同様の動作。
