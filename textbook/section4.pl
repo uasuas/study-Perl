@@ -74,3 +74,9 @@ my @array = ("one", "on", "one");
 # push(@array, "I", "Love", "You");
 push(@array, ("I", "Love", "You")); # 上記と同様の動作。
 print "@array\n";
+
+# popの使用。p90
+# 最後の要素だけ取り除く。
+my $arrayone = pop(@array);
+print "$arrayone\n";
+print "@array\n";
