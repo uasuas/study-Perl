@@ -108,4 +108,6 @@ print "$shift\n";
 unshift(@array, ("I", "Love", "You"));
 print "@array\n"; #出力 I Love You on one
 
-# push と shift を組み合わせるとキュー（先入先出し）
+# push と shift を組み合わせるとキュー（先入先出し）、
+# unshift と pop を組み合わせるとキュー（先入先出し）の２通りあるが　
+# 大量データを使用する際は前者の方が高速。
