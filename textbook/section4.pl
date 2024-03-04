@@ -95,3 +95,10 @@ if (defined($array)) {
 } else {
   print "undef\n";
 }
+
+# shiftの使用。p93
+# 最初の要素を取り出す。
+@array = ("one", "on", "one");
+my $shift = shift(@array);
+print "@array\n";
+print "$shift\n";
