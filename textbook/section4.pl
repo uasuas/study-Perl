@@ -111,3 +111,14 @@ print "@array\n"; #出力 I Love You on one
 # push と shift を組み合わせるとキュー（先入先出し）、
 # unshift と pop を組み合わせるとキュー（先入先出し）の２通りあるが　
 # 大量データを使用する際は前者の方が高速。
+
+# spliceの使用。p95
+# 要素の抜き出しと挿入。
+my @spell = qw(A B C D E F G);
+my @test = qw(X Y Z);
+# 新たに用意するn行き出したものの変数 = splice(出し入れ元, 初め, 終わり, 入れる内容)
+my @result = splice(@spell, 1, 3, @test);
+# 編集後の内容。
+print "@spell\n";
+# 取り出した内容。
+print "@result\n";
