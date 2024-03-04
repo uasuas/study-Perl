@@ -102,3 +102,8 @@ if (defined($array)) {
 my $shift = shift(@array);
 print "@array\n";
 print "$shift\n";
+
+# unshiftの使用。p93
+# 最初に要素を加える。
+unshift(@array, ("I", "Love", "You"));
+print "@array\n"; #出力 I Love You on one
