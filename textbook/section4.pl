@@ -64,3 +64,8 @@ my @score2 = split(//, "1,2,3"); #出力　1 , 2 , 3
 @score2 = split(/,/, "1,2,3"); #出力　1 2 3
 @score2 = split(/1,/, "1,2,3"); #出力　 2,3
 print "@score2\n";
+
+# pushの使用。p88
+# 最後に要素を加える。
+push(@score2, "LAST");
+print "@score2\n";
