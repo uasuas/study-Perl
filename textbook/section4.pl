@@ -107,3 +107,5 @@ print "$shift\n";
 # 最初に要素を加える。
 unshift(@array, ("I", "Love", "You"));
 print "@array\n"; #出力 I Love You on one
+
+# push と shift を組み合わせるとキュー（先入先出し）
