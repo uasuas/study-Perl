@@ -118,6 +118,16 @@ my @spell = qw(A B C D E F G);
 my @test = qw(X Y Z);
 # 新たに用意するn行き出したものの変数 = splice(出し入れ元, 初め, 終わり, 入れる内容)
 my @result = splice(@spell, 1, 3, @test);
+
+# 入れる内容 を記入しなければ、取り出しのみ。
+# @result = splice(@spell, 1, 3);
+
+# 出し入れ元, 初め のみの記述にするとその箇所のみ取り出し。
+# @result = splice(@spell, 1);
+
+# 出し入れ元 のみの記述にすると全て取り出し。
+# @result = splice(@spell);
+
 # 編集後の内容。
 print "@spell\n";
 # 取り出した内容。
