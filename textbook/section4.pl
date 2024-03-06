@@ -142,3 +142,9 @@ print join(", ", @sort), "\n";
 # reverseはASCIIコードの数値順を逆にする（ABC逆順）
 my @reverse = reverse(sort(@array2));
 print join(", ", @reverse), "\n";
+
+# 数字のsortについて。p100
+my @sort2 = (31, 41, 82, 58, 9, 72);
+# 通常sortをすると（31, 41, 58, 72, 82, 9）となってしまう為。
+my @sorted2 = sort{$a <=> $b} @sort2;
+print "@sorted2\n";
