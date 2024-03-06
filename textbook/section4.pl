@@ -132,3 +132,13 @@ my @result = splice(@spell, 1, 3, @test);
 print "@spell\n";
 # 取り出した内容。
 print "@result\n";
+
+# sortの使用。p98
+# sortはASCIIコードの数値順（ABC順）
+my @array2 = ("sun", "mon", "tue", "wed", "thu", "fri", "sat");
+my @sort = sort(@array2);
+print join(", ", @sort), "\n";
+# reverseの使用。p98
+# reverseはASCIIコードの数値順を逆にする（ABC逆順）
+my @reverse = reverse(sort(@array2));
+print join(", ", @reverse), "\n";
