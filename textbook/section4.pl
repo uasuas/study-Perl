@@ -149,3 +149,15 @@ my @sort2 = (31, 41, 82, 58, 9, 72);
 # 配列の中身を比較する。
 my @sorted2 = sort{$a <=> $b} @sort2;
 print "@sorted2\n";
+
+# 練習問題。p105
+my $time = "01:23:45";
+my ($hour, $min, $sec) = split(/:/, $time);
+print "$hour時$min分$sec秒です。\n";
+
+my $index = 2;
+my @array3 = qw(1 2 3 4 5 6 7 8 9);
+my $arrayrange = @array3;
+if (0 <= $index and $index < $arrayrange) {
+  print $array3[$index], "\n";
+}
