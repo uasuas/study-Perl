@@ -187,3 +187,18 @@ print "@a\n";
 my $d = 3;
 @c = splice(@a, $d-1, 1);
 print "@c\n";
+
+my @info = qw(mail1:name1:age1 mail2:name2:age2 mail3:name3:age3);
+print "<html><table border=\"1\">\n";
+# @info の中身を foreach で展開し $content に代入。
+# (この時点では mail1:name1:age1 で1回目の処理を行う)
+# (この時点では mail2:name2:age2 で2回目の処理を行う)
+# (この時点では mail3:name3:age3 で3回目の処理を行う)
+foreach my $content(@info){
+  #展開した中身が入った $content の　mail1:name1:age1　を @content に : を取り除き配列を作成。
+  # この時点では mail1 name1 age1 になっている。
+  my @content = split(/:/, $content);
+  # 配列の中身を [0] [1] [2] を使用して展開している。
+  print "<tr><td>$content[0]</td><td>$content[1]</td><td>$content[2]</td></tr>\n";
+}
+print "</table></html>\n";
