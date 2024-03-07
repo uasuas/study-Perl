@@ -206,3 +206,9 @@ print "</table></html>\n";
 my @a2 = (30, 58, 78, 23, 8, 46);
 my @sortans = reverse(sort{$a <=> $b} @a2);
 print "@sortans\n";
+
+my ($name, $msg, $age) = ("testname", "testmsg", "testage");
+my $date = join(",", $name, $msg, $age);
+print "$date\n";
+($name, $msg, $age) = split(/,/, $date);
+print "$name $msg $age\n";
