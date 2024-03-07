@@ -122,8 +122,8 @@ my @result = splice(@spell, 1, 3, @test);
 # 入れる内容 を記入しなければ、取り出しのみ。
 # @result = splice(@spell, 1, 3);
 
-# 出し入れ元, 初め のみの記述にするとその箇所のみ取り出し。
-# @result = splice(@spell, 1);
+# 出し入れ元, 初め のみの記述にするとその箇所から最後まで取り出し。
+@result = splice(@spell, 1);
 
 # 出し入れ元 のみの記述にすると全て取り出し。
 # @result = splice(@spell);
@@ -161,3 +161,29 @@ my $arrayrange = @array3;
 if (0 <= $index and $index < $arrayrange) {
   print $array3[$index], "\n";
 }
+
+# この周辺は理解が未熟。
+my @a = qw(a r r a y);
+my $b = 'A';
+my @ans = splice(@a, 5, 5, $b);
+print @a, "\n";
+
+@a = qw(a r r a y);
+my @c = '';
+@c = splice(@a, 4, 4);
+print "@c\n";
+
+@a = qw(a r r a y);
+@c = '';
+@c = splice(@a, 0, 1);
+print "@c\n";
+
+@a = qw(a r r a y);
+$b = 'A';
+splice(@a, 0, 0, $b);
+print "@a\n";
+
+@a = qw(a r r a y);
+my $d = 3;
+@c = splice(@a, $d-1, 1);
+print "@c\n";
