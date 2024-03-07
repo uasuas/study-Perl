@@ -164,8 +164,8 @@ if (0 <= $index and $index < $arrayrange) {
 
 # この周辺は理解が未熟。
 my @a = qw(a r r a y);
-my $b = 'A';
-my @ans = splice(@a, 5, 5, $b);
+my $e = 'A';
+my @ans = splice(@a, 5, 5, $e);
 print @a, "\n";
 
 @a = qw(a r r a y);
@@ -179,8 +179,8 @@ print "@c\n";
 print "@c\n";
 
 @a = qw(a r r a y);
-$b = 'A';
-splice(@a, 0, 0, $b);
+$e = 'A';
+splice(@a, 0, 0, $e);
 print "@a\n";
 
 @a = qw(a r r a y);
@@ -202,3 +202,7 @@ foreach my $content(@info){
   print "<tr><td>$content[0]</td><td>$content[1]</td><td>$content[2]</td></tr>\n";
 }
 print "</table></html>\n";
+
+my @a2 = (30, 58, 78, 23, 8, 46);
+my @sortans = reverse(sort{$a <=> $b} @a2);
+print "@sortans\n";
