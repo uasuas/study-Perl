@@ -39,3 +39,11 @@ foreach my $i(%hash){
 foreach (keys(%hash)){
   print "$_ => $hash{$_}\n";
 }
+
+# hach の内容追加。p117
+# この場合 => ではない。
+$hash{"use5"} = 42;
+
+# $hash{キー} = 値;
+# $array[添字] = 値;
+# {} と [] の違いで大きく変わる。
