@@ -35,3 +35,7 @@ foreach my $key(keys(%hash)){
 foreach my $i(%hash){
   print "$i\n";
 }
+# 別記法。p116
+foreach (keys(%hash)){
+  print "$_ => $hash{$_}\n";
+}
