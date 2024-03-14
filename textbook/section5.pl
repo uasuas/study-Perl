@@ -50,4 +50,29 @@ $hash{"use5"} = 42;
 
 # 既にある キー を使用した場合、値 が上書きされる。
 $hash{"use1"} = 10;
-print "$hash{\"use1\"}\n"
+print "$hash{\"use1\"}\n";
+
+# ----------
+# sortの使用。p120
+# sortはキーのみで値はsortの対象ではない。
+foreach (sort keys %hash) {
+  print "$_ => $hash{$_}\n";
+}
+# 別表記。
+foreach (sort(keys(%hash))) {
+  print "$_ => $hash{$_}\n";
+}
+
+# 値のsort。
+foreach (sort{$hash{$a} <=> $hash{$b}} keys %hash) {
+  print "$_ => $hash{$_}\n";
+} 
+
+# 要素の重複をとり除く。p123
+my %uniq;
+my @array = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5);
+foreach my $item (@array) {
+  $uniq{$item} = 1;
+}
+my @uniqarray = keys(%uniq);
+print "@uniqarray\n";
